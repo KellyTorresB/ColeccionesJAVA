@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Comparison Table</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+    </style>
+</head>
+
+
+<body>
+    <h1>Comparación de colecciones de JAVA</h1>
+    <br>
+    <table class="table table-striped-columns">
+        <caption>Tabla de comparación de colecciones de JAVA</caption>
+        <thead>
+            <tr>
+                <th>Características</th>
+                <th>ArrayList</th>
+                <th>LinkedList</th>
+                <th>HashSet</th>
+                <th>TreeSet</th>
+                <th>HashMap</th>
+                <th>TreeMap</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tipo de implementación</td>
+                <td>Array</td>
+                <td>Linked List</td>
+                <td>Hashing</td>
+                <td>Árbol</td>
+                <td>Hashing</td>
+                <td>Árbol</td>
+            </tr>
+            <tr>
+                <td>Eficiencia en la inserción</td>
+                <td>O(1)</td>
+                <td>O(1)</td>
+                <td>O(1)</td>
+                <td>O(log n)</td>
+                <td>O(1)</td>
+                <td>O(log n)</td>
+            </tr>
+            <tr>
+                <td>Eficiencia en la eliminación</td>
+                <td>O(n)</td>
+                <td>O(1)</td>
+                <td>O(1)</td>
+                <td>O(log n)</td>
+                <td>O(1)</td>
+                <td>O(log n)</td>
+            </tr>
+            <tr>
+                <td>Eficiencia en la búsqueda</td>
+                <td>O(1)</td>
+                <td>O(n)</td>
+                <td>O(1)</td>
+                <td>O(log n)</td>
+                <td>O(1)</td>
+                <td>O(log n)</td>
+            </tr>
+            <tr>
+                <td>Ordenamiento de elementos</td>
+                <td>No</td>
+                <td>No</td>
+                <td>No</td>
+                <td>Sí</td>
+                <td>No</td>
+                <td>Sí</td>
+            </tr>
+            <tr>
+                <td>Capacidad para almacenar elementos duplicados</td>
+                <td>Sí</td>
+                <td>Sí</td>
+                <td>No</td>
+                <td>No</td>
+                <td>Sí</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Uso de claves y valores (en el caso de las colecciones de tipo mapa)</td>
+                <td>No</td>
+                <td>No</td>
+                <td>No</td>
+                <td>No</td>
+                <td>Sí</td>
+                <td>Sí</td>
+            </tr>
+            <tr>
+                <td>Iteración y acceso a los elementos</td>
+                <td>Eficiente</td>
+                <td>Eficiente</td>
+                <td>Aleatorio</td>
+                <td>Ordenado</td>
+                <td>Aleatorio</td>
+                <td>Ordenado</td>
+            </tr>
+            <tr>
+                <td>Uso de memoria</td>
+                <td>Mayor</td>
+                <td>Mayor</td>
+                <td>Menor</td>
+                <td>Mayor</td>
+                <td>Menor</td>
+                <td>Mayor</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Conclusiones:</h2>
+    <ul >
+        <li><strong>ArrayList</strong> y <strong>LinkedList</strong> son adecuadas para operaciones que implican un
+            acceso frecuente por índice o modificaciones en el medio de la colección.</li>
+        <li><strong>HashSet</strong> es útil cuando se necesitan elementos únicos sin un orden específico.</li>
+        <li><strong>TreeSet</strong> y <strong>TreeMap</strong> son adecuados cuando se requiere un ordenamiento
+            específico de los elementos.</li>
+        <li><strong>HashMap</strong> y <strong>TreeMap</strong> son útiles para asociar claves con valores.</li>
+        <li>La elección de la colección depende de los requisitos específicos del proyecto en términos de eficiencia,
+            ordenamiento y necesidades de almacenamiento.</li>
+    </ul>
+    
+</body>
+
+</html>
